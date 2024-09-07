@@ -4,8 +4,29 @@
 # Problem 1
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
+my_list = [1,5,'apple', 20.5]
+print(my_list[2])
+my_list.append(10)
+print(my_list)
+my_list.remove(20.5)
+print(my_list)
+my_list.reverse
+print(my_list)
+
 # Problem 2
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
+person = {
+    'name': 'John',
+    'age': 30,
+    'job': 'teacher'
+}
+print(person['job'])
+person['city']='Paris'
+print(person)
+del person['age']
+print(person)
+for key, value in person.items():
+    print(f"{key}: {value}")
 
 # -----------------------------------------------------------------------------
 

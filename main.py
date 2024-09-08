@@ -45,6 +45,7 @@ def test(did_pass):
 
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
+
     """
     Count the number of vowels in a string.
 
@@ -54,6 +55,21 @@ def count_vowels(s: str) -> int:
     Returns:
     - int: The number of vowels in the string
     """
+    vowel_count = 0
+    s = s.lower()
+    for char in s:
+        if char == 'a':
+            vowel_count +=1
+        elif char == 'e':
+            vowel_count +=1
+        elif char == 'i':
+            vowel_count +=1
+        elif char == 'o':
+            vowel_count +=1
+        elif char == 'u':
+            vowel_count +=1
+
+        return vowel_count
     # TODO: Implement this function
     pass
 

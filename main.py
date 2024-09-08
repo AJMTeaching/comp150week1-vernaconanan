@@ -185,7 +185,10 @@ def reverse_string(s: str) -> str:
     Returns:
     - str: The reversed string
     """
-    
+    reversed_string = ""
+    for char in s:
+        reversed_string = char + reversed_string
+    return reversed_string
     # TODO: Implement this function
     pass
 
@@ -215,6 +218,7 @@ def intersection(list1: list, list2: list) -> list:
     Returns:
     - list: The intersection of the two lists
     """
+    
     # TODO: Implement this function
     pass
 

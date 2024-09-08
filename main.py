@@ -59,17 +59,17 @@ def count_vowels(s: str) -> int:
     s = s.lower()
     for char in s:
         if char == 'a':
-            vowel_count +=1
+            vowel_count += 1
         elif char == 'e':
-            vowel_count +=1
+            vowel_count += 1
         elif char == 'i':
-            vowel_count +=1
+            vowel_count += 1
         elif char == 'o':
-            vowel_count +=1
+            vowel_count += 1
         elif char == 'u':
-            vowel_count +=1
+            vowel_count += 1
 
-        return vowel_count
+    return vowel_count
     # TODO: Implement this function
     pass
 

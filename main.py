@@ -101,11 +101,24 @@ def merge_lists(list1: list, list2: list) -> list:
     - list: A new sorted list containing all elements from list1 and list2
     """
     merged_list = []
-    list1, list2 = 0, 0
+    b, d = 0, 0
 
-    while list1 and list2:
-        if list1[0] < list2[0]:
-            merged_list.append
+    while b < len(list1) and d < len(list2):
+        if list1[b] < list2[d]:
+            merged_list.append(list1[b])
+            b += 1
+        else:
+            merged_list.append(list2[d])
+            d += 1
+    while b < len(list1):
+        merged_list.append(list1[b])
+        b += 1
+
+    while d < len(list2):
+        merged_list.append(list2[d])
+        d += 1
+
+    return merged_list
 
 
     # TODO: Implement this function
@@ -139,6 +152,12 @@ def word_lengths(words: list) -> list:
     Returns:
     - list: A list containing the lengths of the words
     """
+    lengths = []
+
+    for word in words:
+        lengths.append(len(word))
+
+    return lengths
     # TODO: Implement this function
     pass
 
@@ -166,6 +185,7 @@ def reverse_string(s: str) -> str:
     Returns:
     - str: The reversed string
     """
+    
     # TODO: Implement this function
     pass
 

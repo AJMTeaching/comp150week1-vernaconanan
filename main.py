@@ -218,7 +218,17 @@ def intersection(list1: list, list2: list) -> list:
     Returns:
     - list: The intersection of the two lists
     """
-    
+    result = []
+    for item1 in list1:
+        for item2 in list2:
+            if item1 == item2:
+                if item1 not in result:
+                    result.append(item1)
+                break
+            else:
+                continue
+
+    return result
     # TODO: Implement this function
     pass
 
